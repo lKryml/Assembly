@@ -1,0 +1,12 @@
+.model small = 64k kb for data segment and code segment
+.data = define variables
+
+start:
+{mov AX, @data
+mov DS, AX}:
+initialize variables
+{mov ah, 4ch
+Int 21h}:
+return 0 equivalent
+{end start
+end}
