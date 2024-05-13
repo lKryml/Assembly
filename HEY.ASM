@@ -1,11 +1,12 @@
 .model small
 
-.data                                                                                                                                                                                                                                                                                                                                                                                            
-.code                                                                                                                                                                                                                                                                                                                                            
+.data       
+
+.code
 start: MOV AX,@DATA
        MOV DS, AX
-                                                                                                                                
-       MOV DL, 'H'                                                                                                                                                                      
+
+       MOV DL, 'H'                                                                                                                                                                  
        MOV AH, 02H
        INT 21H
 

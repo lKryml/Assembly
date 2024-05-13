@@ -1,12 +1,23 @@
-.model small = 64k kb for data segment and code segment
-.data = define variables
+.model small == 64k kb for data segment and code segment
 
-start:
+.data == define variables
+
+start: == main function
+
 {mov AX, @data
 mov DS, AX}:
 initialize variables
+
 {mov ah, 4ch
 Int 21h}:
 return 0 equivalent
+
 {end start
-end}
+end}: end of main
+
+
+0AH,0DH == Newline
+$ == String terminator
+
+EQU == Constant
+
