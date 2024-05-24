@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .model small
 .stack 100h
 .data
@@ -27,8 +28,8 @@ str2 db 0ah,0dh, "yeeezir the number is: $"
             mov ah,4ch
             int 21h
 
-            end start
-            end
+        end start
+        end
 
 
 
